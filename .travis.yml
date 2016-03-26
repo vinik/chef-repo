@@ -1,1 +1,10 @@
 language: ruby
+rvm:
+  - 1.9.3
+before_script:
+  - secret=`openssl rsautl -decrypt -inkey ~/.ssh/id_rsa -in .chef/travis_secret`
+  - openssl aes-256-cbc -k "$secret" -in .chef/travis-ci.pem.enc -d -a -out .chef/travis-ci.pem
+env:
+  global:
+    - OPSCODE_USER=travis-ci
+script: "bundle exec knife inspect"
