@@ -14,4 +14,4 @@ addons:
     - chefdk
 
 script:
-- foodcritic chef/cookbooks/ckrst
+- foodcritic cookbooks/ckrst
