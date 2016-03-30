@@ -13,6 +13,8 @@ addons:
     packages:
     - chefdk
 
+install: gem install rspec
+
 script:
 - foodcritic cookbooks/ckrst
 - rspec cookbooks/ckrst
