@@ -17,4 +17,4 @@ install: gem install rspec
 
 script:
 - foodcritic cookbooks/ckrst
-- rspec cookbooks/ckrst
+- chef exec rspec cookbooks/ckrst
