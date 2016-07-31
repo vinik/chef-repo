@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+package 'wget'
+
 docker_service 'default' do
   action [:create, :start]
 end
