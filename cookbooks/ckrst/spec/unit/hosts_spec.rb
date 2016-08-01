@@ -1,4 +1,5 @@
-require 'chefspec'
+#require 'chefspec'
+require 'spec_helper'
 
 describe 'ckrst::hosts' do
     let (:chef_run) { ChefSpec::SoloRunner.converge(described_recipe) }

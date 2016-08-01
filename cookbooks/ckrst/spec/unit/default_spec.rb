@@ -1,4 +1,5 @@
-require 'chefspec'
+#require 'chefspec'
+require 'spec_helper'
 
 at_exit { ChefSpec::Coverage.report! }
 
