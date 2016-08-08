@@ -1,0 +1,22 @@
+{
+    "name": "workstation",
+    "description": "My development workstation role",
+    "json_class": "Chef::Role",
+    "default_attributes": {
+        "java": {
+            "jdk_version": "8",
+            "accept_license_agreement": true
+        }
+    },
+    "override_attributes": {
+
+    },
+    "chef_type": "role",
+    "run_list": [
+        "git",
+        "nodejs",
+        "java::openjdk"
+    ],
+    "env_run_lists": {
+    }
+}

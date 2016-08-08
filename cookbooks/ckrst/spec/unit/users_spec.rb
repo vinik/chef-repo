@@ -4,7 +4,7 @@ describe 'ckrst::users' do
     let (:chef_run) { ChefSpec::SoloRunner.converge(described_recipe) }
 
     before do
-        Chef::Recipe.any_instance.stub(:chef_vault_item).with("ckrst", "users").and_return(
+        Chef::Recipe.any_instance.stub(:chef_vault_item).with("ckrst", "users2").and_return(
         {
             "id" => "my_item",
             "foo" => {
